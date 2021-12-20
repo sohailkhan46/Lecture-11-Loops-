@@ -86,3 +86,171 @@ int main()
 	  return 0;
 }
 
+
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int y;
+	cout << "Enter a number you want the table of: " << endl;
+	
+	cin >> y;
+	while (cin.fail())
+	{
+		cout << "Incorrect command enter the numbers again: " << endl;
+		cin.clear();
+		cin.ignore(1000, '\n');
+
+		cin >> y;
+	}
+	    for (int x = 0; x <= 10; x++)
+	{
+		cout << y << " x " << x << " = " << y * x << endl;
+
+	}
+		return 0;
+}
+
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int y, x = 0;
+	cout << "Enter a number you want the table of: " << endl;
+	cin >> y;
+
+	while (cin.fail())
+	{
+		cout << "Incorrect command enter the value again: " << endl;
+		cin.clear();
+
+		cin.ignore(1000, '\n');
+		cin >> y;
+	}
+	 while (x <= 10)
+	{
+		cout << y << " x " << x << " = " << y * x << endl;
+		x++;
+	}
+	return 0;
+}
+
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+
+{
+	int y, x, z = 0;
+	cout << "Enter a value you want the table of as well as till which value you want it to be printed example 10 etc.: " << endl;
+
+	cin >> y >> x;
+	while (cin.fail())
+	{
+		 cout << "Incorrect command enter the value again: " << endl;
+		 cin.clear();
+
+		  cin.ignore(1000, '\n');
+	     	cin >> y >> x;
+	}
+	while (y <= 10)
+	{
+		cout << y << " x " << z << " = " << y * z << endl;
+		z++;
+	}
+	return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int x;
+	cout << "Enter a value you want the table of:" << endl;
+
+	cin >> x;
+	while (cin.fail())
+	{
+		cout << "Incorrect command enter the value again: " << endl;
+		cin.clear();
+
+		cin.ignore(1000, '\n');
+		cin >> x;
+	}
+	int y;
+	cout << "Enter a value till which number you want it to be printed example 10 etc.: " << endl;
+
+	cin >> y;
+	while (cin.fail())
+	{
+		cout << "Incorrect command enter the value again: " << endl;
+	     	cin.clear();
+
+		 cin.ignore(1000, '\n');
+		      cin >> y;
+	}
+	for (int z = 0; z <= y; z++)
+	{
+		cout << x << " x " << z << " = " << x * z << endl;
+
+	}
+	return 0;
+}
+
+
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	 int y = 100, sum = 0;
+	 do
+	{
+
+		if (y % 9 == 0)
+		{
+			cout << "\nNumber is " << y << endl;
+			sum = sum + y;
+		}
+
+		y++;
+
+	}    while (y <= 200);
+
+	 cout << "The sum is " << sum << endl;
+	 
+	 return 0;
+}
+
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    cout << "Write the number for factorial\n";
+    double x, fact = 1;
+
+    cin >> x;
+    
+    for (int y = x; y > 0; y--)
+    {
+        fact = y * fact;
+    }
+     cout << "The factorial is: " << fact;
+
+    return 0;
+}
